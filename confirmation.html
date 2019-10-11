@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Araak Order Confirmation</title>
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/4ea0f360ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- nav bar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            <img src="./images/AraakBagLogo.svg" alt="store logo" id="logo" />
+            <div class="cart-btn">
+                <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                        <!-- <i class="fas fa-shopping-cart"></i> -->
+    
+                    </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of nav bar -->
+
+    <!-- hero  -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Araak Collection</h1>
+            <button class="back-to-shopping banner-btn">Back to home for more products</button>
+        </div>
+    </header>
+    <!-- end of hero  -->
+
+    <!-- Order Details -->
+    <section class="wn__checkout__area section-padding--lg bg__white" id="checkout-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="wn__confirmation__box">
+                        <h3 class="order__title">Thank you for your order</h3>
+                        <!-- Order Number: -->
+                        <h6> <strong>Order Number: </strong> <span class="order-number" id="NUM">123456</span></h6>
+                        <!-- Order Date: -->
+                        <h6> <strong>Order Date: </strong> <span class="order-date" id="DATE"></span></h6>
+                        <!-- Customer : -->
+                        <h6> <strong>Email: </strong> <span class="order-name" id="EMAIL">johndoe@gmail.com</span></h6>
+                        <h6 class="final"> <strong>Customer name: </strong> <span class="order-name" id="NAME">John Doe</span></h6>
+
+                        <h8>Please keep the above numbers for referene. A confirmation email will be sent to the email provided shortly. </h8>
+                        <div class="thinborder"></div>
+                        <!-- Shipping Address: -->
+                        <h8><strong>Shipping Address: </strong></h8><br>
+                        <h8><span class="line1" id="LINE1_S">Line 1</span></h8><br>
+                        <h8><span class="line2" id="LINE2_S">Line 2</span></h8><br>
+                        <h8><span class="city" id="CITY_S">City</span></h8><br>
+                        <h8><span class="country" id="COUNTRY_S">Country</span></h8><br>
+                        <h8><span class="post code" id="POSTCODE_S">Post Code</span></h8><br>
+                        <div class="thinborder"></div>
+
+                        <!-- Billing Address: -->
+                        <h8><strong>Billing Address: </strong></h8><br>
+                        <h8><span class="line1" id="LINE1_B">Line 1</span></h8><br>
+                        <h8><span class="line2" id="LINE2_B">Line 2</span></h8><br>
+                        <h8><span class="city" id="CITY_B">City</span></h8><br>
+                        <h8><span class="country" id="COUNTRY_B">Country</span></h8><br>
+                        <h8><span class="post code" id="POSTCODE_B">Post Code</span></h8><br>
+                        <div class="thinborder"></div>
+                        <!-- Payment Method: -->
+                        <h8><strong>Payment Method: </strong>PayPal</h8><br>
+
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 col-12 md-mt-40 sm-mt-40">
+                    <div class="wn__order__box">
+                        <h3 class="order__title">Order Summary</h3>
+                        <div class="cart-content-confirmation">
+                            <!-- cart items from cart then clear -->
+                        </div>
+                        <h6> <strong>Number of Items:</strong> <span class="items-total">0</span></h6>
+                        <h6> <strong>Cart Subtotal:</strong> $<span class="cart-total">0</span></h6>
+                        <h6> <strong>Shipping:</strong> <span class="shipping-selected">0</span></h6>
+
+                        <ul class="total__amount">
+                            <li>Order Total: <span class="total-amount-plus-shipping">$0.00</span></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Checkout Area -->
+    <script src="js/storage.js"></script>
+    <script src="js/confirmation.js"></script>
+
+</body>
+
+</html
