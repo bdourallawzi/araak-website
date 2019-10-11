@@ -80,6 +80,9 @@ class CheckoutUI {
             location.href = "index.html#products";
 
         });
+        document.querySelector('#confirm-button').addEventListener('click', () => {
+            location.href = "confirmation.html#confirmation-section";
+        });
     }
 
     populateInput() {
